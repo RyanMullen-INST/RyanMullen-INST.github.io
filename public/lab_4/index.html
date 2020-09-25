@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Ryan Mullen Lab 4</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Cinzel+Decorative:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400;900&display=swap" rel="stylesheet">
+    
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+<body>   
+    
+    <div class="header">
+        <h1>Ryan Mullen Lab #4</h1>
+    </div>       
+
+    <form action="/api" method="post">
+    <div class="container">  
+        <ul class="flex-outer">
+            <!--CITATION: https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767-->
+            <li>
+            <label for="fname">First Name</label>
+            <input type="text" name="first-name" id="fname" placeholder="Enter first name here" maxlength="140">
+            </li>
+            
+            <li>
+            <label for="lname">Last Name</label>
+            <input type="text" name="last-name" id="lname" placeholder="Enter surname here" maxlength="140">
+            </li>
+            
+            <li>
+            <label for="email">Email address</label>
+            <input type="email" name="email" id="email" placeholder="Enter email">
+            </li>
+
+            <li>
+            <label for="phone">Phone Number</label>
+            <input type="tel" name ="phone" id="phone" placeholder="Enter phone number here">
+            </li>
+
+            <li>
+            <label for="message">Message not in a bottle</label>
+            <textarea rows="5" cols="33" name="message" id="message" placeholder="Enter your message here"></textarea>
+            </li>
+
+            <li>
+                <p>Age</p>
+                <ul class="flex-inner">
+                  <li>
+                      <input type="checkbox" id="18-35" name="age">
+                      <label for="18-35">18-35</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="35-50" name="age">
+                    <label for="35-50">35-50</label>
+                  </li>
+                  
+                  <li>
+                    <input type="checkbox" id="50-65" name="age">
+                    <label for="50-65">50-65</label>
+                  </li>
+
+                </ul>
+              </li>
+
+            <li>
+            <button type="submit" id="button" name ="button">GIVE ME YOUR DATA SO I MAY SELL IT</button>
+            </li>
+        </ul>
+        </form>
+    </div>
+    
+
+</body>
+</html>
+
