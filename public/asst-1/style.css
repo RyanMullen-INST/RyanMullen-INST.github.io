@@ -11,5 +11,13 @@ img {
 }
 
 .header {
+<<<<<<< HEAD
     background-color: #0a1659;
+=======
+    background-color: #230A59;
+}
+
+body {
+    background: #829FD9;
+>>>>>>> 2f13a8d1d29de461fad4d95d5f8482bf0b53206d
 }
