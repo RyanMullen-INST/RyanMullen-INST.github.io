@@ -5,11 +5,11 @@
 /*   pale blue:   #829FD9    */
 /*   white:       #FFFFFF    */
 
-/* ----- Fonts --------------*/
-/* font-family: 'Press Start 2P', cursive; */
-/* font-family: 'Cormorant Garamond', serif; */
-/* Coromorant imported 2 forms: Regular 400 Italic, Bold 700 */
-/* Bold is for headers, Italic for standard text */
+/* -------------------- fonts -------------------- */
+/*  font-family: 'Press Start 2P', cursive;        */
+/*  font-family: 'Cormorant Garamond', serif;      */
+/*                Regular 400 Italic, Bold 700     */
+/*  Headers bold, text italic                      */
 
 img {
     max-width: 100%;
@@ -21,8 +21,20 @@ img {
     font-family: 'Press Start 2P', cursive;
 }
 
+h1, h2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+}
+
 body {
     background: #829FD9;
-    font-family: italic 'Cormorant Garamond', serif;
+    font-family: 'Cormorant Garamond', serif;
     /* asking prof A for help with how to choose which specific type of the font*/
+}
+
+p {
+    font-style: italic;
+    font-weight: 400;
 }
