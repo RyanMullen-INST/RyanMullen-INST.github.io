@@ -2,9 +2,9 @@
 
 requirements:
 
- - style ONLY with class names
- - NO ID TAGS
- - NO ELEMENT TAGS
+ - style ONLY with class names .Class-name
+ - NO ID TAGS #tag for example
+ - NO ELEMENT TAGS --> don't be broad
  - use flexbox, padding, and margins
  - NO CLEARS
  - NO FLOATS
@@ -20,6 +20,8 @@ requirements:
 .header {
     background-color: #0a1659;
     font-family: 'Press Start 2P', cursive;
+    color: white;
+    
 }
 
 h1, h2 {
@@ -32,7 +34,7 @@ h1, h2 {
 body {
     background: #829FD9;
     font-family: 'Cormorant Garamond', serif;
-    /* asking prof A for help with how to choose which specific type of the font*/
+
 }
 
 p {
