@@ -13,12 +13,16 @@ requirements:
 
 
 .athena-pic {
-    max-width: 21.9%;
+    max-width: 18%;
     height: auto;
     border-radius: 4px;
     border-width: 1px;
     border-style: solid;
 }
+
+/*.testudo {
+    max-width: 
+}*/
 
 .header {
     background-color: #0a1659;
@@ -32,48 +36,59 @@ requirements:
     align-items: center;
 }
 
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
 .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-between;
-    /*justify-content: center;*/
+    /*justify-content: space-between;*/
+    justify-content: center;
+    max-width: 960px;
 }
+
 
 
 body {
     background: #829FD9;
     font-family: 'Cormorant Garamond', serif;
-
 }
 
-
 .dog-intro {
+    display: flex;
     font-style: italic;
     font-weight: 400;
     margin-right: 15px;
     justify-content: center;
 }
 
+.dog-bio {
+    background-color: #5C73F2;
+    display: block;
+    flex: 1 0 auto;
+    justify-content: center;
+}
+
+.ordered {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+}
 
 /* Font selection */
 
 h1, h2 {
     margin: 0;
     padding: 0;
-   /* font-family: 'Cormorant Garamond', serif;*/
     font-weight: 700;
 }
 
 .header-text {
     font-family: 'Press Start 2P', sans-serif;
     color: white;
-}
-
-.ordered {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
 }
 
 .boof{
