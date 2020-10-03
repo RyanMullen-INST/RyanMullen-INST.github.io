@@ -3,9 +3,10 @@
 requirements:
 
  - style ONLY with class names
+- use flexbox, padding, and margins
+
  - NO ID TAGS
  - NO ELEMENT TAGS
- - use flexbox, padding, and margins
  - NO CLEARS
  - NO FLOATS
 
@@ -22,6 +23,13 @@ requirements:
     font-family: 'Press Start 2P', cursive;
 }
 
+.subject {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* body will be palatino
 h1, h2 {
     margin: 0;
     padding: 0;
