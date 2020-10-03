@@ -24,7 +24,9 @@ requirements:
 
 .wrapper {
     margin: 0;
-    background-color: #5C73F2;
+    background-color: #829FD9;
+    color: #000;
+    font-family: 'Palatino', serif;
 }
 
 .container {
