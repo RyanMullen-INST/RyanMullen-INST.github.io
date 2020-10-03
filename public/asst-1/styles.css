@@ -24,6 +24,7 @@ requirements:
 
 .wrapper {
     margin: 0;
+    background-color: #5C73F2;
 }
 
 .container {
@@ -32,7 +33,7 @@ requirements:
 }
 
 .testudo {
-    margin: 1% 0 1%;
+    margin: 2% 0 2%;
 }
 .athena-pic {
     max-width: 100%;
