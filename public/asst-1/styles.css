@@ -23,6 +23,11 @@ requirements:
     font-family: 'Cormorant Garamond', serif;
     display: flex;
     justify-content: space-around;
+    margin: 0;
+}
+
+.wrapper {
+    margin: 0;
 }
 
 .container {
