@@ -41,18 +41,29 @@ requirements:
 .testudo {
     margin: 2% 0 2%;
 }
+
+.dog-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .athena-pic {
     margin: 1% 2% 1% 2%;
 }
 
-.dog-intro {
-    display: flex;
-    justify-content: space-around;
+.caption {
+    background-color: #D3DCF5;
+    padding: 4%;
+    width: auto;
+    height: auto;
+    display: inline-block;
 }
 
 .dog-bio {
     display: flex;
     flex-wrap: wrap;
+    background-color: #D3DCF5;
 }
 
 .subject {
