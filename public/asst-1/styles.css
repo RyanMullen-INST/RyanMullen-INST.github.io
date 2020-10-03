@@ -20,13 +20,12 @@ requirements:
 
 .header {
     background-color: #0a1659;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 .subject {
     margin: 0;
     padding: 0;
-    font-family: 'Cormorant Garamond', serif;
 }
 
 /* body will be palatino
@@ -42,6 +41,7 @@ body {
     font-family: 'Cormorant Garamond', serif;
     /* asking prof A for help with how to choose which specific type of the font*/
 }
+
 
 p {
     font-style: italic;
