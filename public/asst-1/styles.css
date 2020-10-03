@@ -12,11 +12,6 @@ requirements:
 
 */
 
-.athena-pic {
-    max-width: 100%;
-    height: auto;
-}
-
 .header {
     background-color: #0a1659;
     color: #fff;
@@ -34,6 +29,14 @@ requirements:
 .container {
     display: flex;
     flex-wrap: wrap;
+}
+
+.testudo {
+    margin: 1% 0 1%;
+}
+.athena-pic {
+    max-width: 100%;
+    height: auto;
 }
 
 .dog-intro {
