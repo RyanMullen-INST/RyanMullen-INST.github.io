@@ -34,12 +34,17 @@ requirements:
     flex-wrap: wrap;
 }
 
+.header-text {
+    font-weight: 700;
+}
+
 .testudo {
     margin: 2% 0 2%;
 }
 .athena-pic {
-    max-height: 50%;
+    height: auto;
     width: auto;
+    margin: 1% 2% 1% 2%;
 }
 
 .dog-intro {
@@ -64,13 +69,6 @@ h1, h2 {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 700;
 }
-
-body {
-    background: #829FD9;
-    font-family: 'Cormorant Garamond', serif;
-    /* asking prof A for help with how to choose which specific type of the font*/
-}
-
 
 p {
     font-style: italic;
