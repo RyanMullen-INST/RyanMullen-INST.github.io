@@ -12,7 +12,6 @@ requirements:
 
 */
 
-
 .athena-pic {
     max-width: 100%;
     height: auto;
@@ -20,7 +19,25 @@ requirements:
 
 .header {
     background-color: #0a1659;
+    color: #fff;
     font-family: 'Cormorant Garamond', serif;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dog-intro {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dog-bio {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .subject {
