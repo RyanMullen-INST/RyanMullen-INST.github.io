@@ -39,7 +39,7 @@ requirements:
 }
 .athena-pic {
     max-height: 50%;
-    height: auto;
+    width: auto;
 }
 
 .dog-intro {
