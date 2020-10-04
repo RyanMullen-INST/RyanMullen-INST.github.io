@@ -3,7 +3,7 @@
 requirements:
 
  - style ONLY with class names
-- use flexbox, padding, and margins
+ - use flexbox, padding, and margins
 
  - NO ID TAGS
  - NO ELEMENT TAGS
@@ -12,12 +12,21 @@ requirements:
 
 */
 
+<<<<<<< HEAD
 
 
 /* FROM SCRATCH */
+=======
+@media screen and (min-width: 1000px){
+    article{
+        padding: 1rem 3rem;
+    }
+}
+>>>>>>> 8dd368d8ab34b586067bbd9d404d9483a733fc71
 
 html, body {
     background-color: #829FD9;
+    margin: 0;
 }
 
 .header {
@@ -71,6 +80,7 @@ html, body {
     flex-wrap: wrap;
 }
 
+<<<<<<< HEAD
 
 
 @media (max-width: 1000px) {
@@ -106,6 +116,8 @@ p {
     font-weight: 400;
 }
 
+=======
+>>>>>>> 8dd368d8ab34b586067bbd9d404d9483a733fc71
 /* ----- color palette ----- */
 /*   dark blue:   #230A59    */
 /*   mid blue:    #3E38F2    */
