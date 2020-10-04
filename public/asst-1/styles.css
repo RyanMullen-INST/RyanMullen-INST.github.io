@@ -23,7 +23,6 @@ requirements:
 
 html, body {
     background-color: #8cdcf0;
-    
     margin: 0;
 }
 
@@ -37,6 +36,11 @@ html, body {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-around;
+}
+
+.abc{
+    max-width: 60%;
 }
 
 .testudo {
