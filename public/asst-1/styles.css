@@ -12,20 +12,18 @@ requirements:
 
 */
 
-<<<<<<< HEAD
 
 
 /* FROM SCRATCH */
-=======
 @media screen and (min-width: 1000px){
     article{
         padding: 1rem 3rem;
     }
 }
->>>>>>> 8dd368d8ab34b586067bbd9d404d9483a733fc71
 
 html, body {
-    background-color: #829FD9;
+    background-color: #8cdcf0;
+    
     margin: 0;
 }
 
@@ -43,6 +41,7 @@ html, body {
 
 .testudo {
     margin: 2% 0 2%;
+    border-width: 1px;
 }
 
 .wrapper{
@@ -57,7 +56,7 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .athena-pic {
@@ -66,9 +65,8 @@ html, body {
     border-style: solid;
     width: 25%;
     height: auto;
+    margin: 2%;
 }
-
-
 
 .ordered > li > h2 {
     font-style: italic;
@@ -78,24 +76,42 @@ html, body {
 .dog-bio {
     font-family: 'Cormorant Garamond', serif;
     flex-wrap: wrap;
+    background-color: #829FD9;
 }
 
-<<<<<<< HEAD
+.dog-intro {
+    margin-right: 15px;
+    align-content: center;
+}
 
+.caption {
+    background-color: #1791d8;
+    text-align: center;
+    padding: 2%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: 4px black;
+}
 
-@media (max-width: 1000px) {
+/* < 1000 */
+@media screen and (max-width: 1000px) {
+    .container{
+        justify-content: center;
+    }
+
     .dog-intro {
         font-family: 'Cormorant Garamond';
         margin-right: 15px;
         align-items: flex-start;
-        justify-content: center;
+        justify-content: space-between;
         flex: 1 0 auto;
+        flex-direction: column;
         margin-right: 0px;
     }
 }
 
-@media (min-width: 1001px) {
-    .dog-intro {
+@media screen and (min-width: 1001px) {
+    .container {
         font-family: 'Cormorant Garamond';
         margin-right: 15px;
         align-items: flex-start;
@@ -116,8 +132,6 @@ p {
     font-weight: 400;
 }
 
-=======
->>>>>>> 8dd368d8ab34b586067bbd9d404d9483a733fc71
 /* ----- color palette ----- */
 /*   dark blue:   #230A59    */
 /*   mid blue:    #3E38F2    */
