@@ -5,7 +5,6 @@
     <title>Ryan Mullen Lab 4</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Cinzel+Decorative:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400;900&display=swap" rel="stylesheet">
-    
     <link href="styles.css" rel="stylesheet">
   </head>
 
@@ -65,15 +64,26 @@
               </li>
 
             <li>
-            <button type="submit" id="button" name ="button">GIVE ME YOUR DATA SO I MAY SELL IT</button>
-            <button type="submit" id="button" name="button_2">ACTIVATE</button>
+            <button class="button" type="submit" id="button" name ="button">GIVE ME YOUR DATA SO I MAY SELL IT</button>
+            <button class="button2" type="button" id="button2" name="button_2">Activate</button>
             </li>
         </ul>
         </form>
     </div>
-    
+    <script>
 
+      function testFunction() {
+        fetch('/api')
+        .then((response) => response.text())
+        .then((response) => {
+           console.log(response);
+        })
+    }
 
+      
+   
+
+  </script>
     
 </body>
 </html>
