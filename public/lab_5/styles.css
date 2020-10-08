@@ -137,7 +137,9 @@ html, body {
   .button, .button2{
     margin-right: 10px;
   }
-/* .checkbox-list-label {} */
+.checkbox-list-label {
+  color: black;
+}
 
   /* || header layout */
   
