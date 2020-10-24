@@ -17,6 +17,30 @@ function sortFunction(a, b, key) {
   return 0;
 }
 
+// Randomizer works: 5:10 PM
+function randomize(max) {
+  const num = Math.floor(Math.random() * Math.floor(max));
+  console.log(num);
+  return num;
+}
+
+function createCountries() {
+  // somehow create the overall countries array if not able to access directly
+  /* it should pass through from the server as json, parse in the fromserver => fromserver.json() step, 
+  and be available in the final chained step with no real handling as long as 
+  it's being res.json'd correctly from the server */
+}
+
+/*
+function processThis(array){
+  // things
+}
+
+fetch()
+.then(dataFromFetch => dataFromFetch.json())
+.then(json => processThis(json)) 
+*/
+
 document.body.addEventListener('submit', async (e) => {
   e.preventDefault(); // this stops whatever the browser wanted to do itself.
   const form = $(e.target).serializeArray(); // here we're using jQuery to serialize the form
@@ -30,7 +54,10 @@ document.body.addEventListener('submit', async (e) => {
     .then((fromServer) => fromServer.json())
     .then((fromServer) => {
       // You're going to do your lab work in here. Replace this comment.
+      // Array name IS fromServer
+      // console.log(countries); // This line may be obsolete
       console.log('fromServer', fromServer);
+      // console.log(fromServer);
     })
     .catch((err) => console.log(err));
 });
