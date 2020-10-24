@@ -8,10 +8,10 @@ function range(int) {
   return arr;
 }
 
-function sortFunction(a, b, key) {
-  if (a[key] < b[key]) {
+function sortByKey(original, compare, key) {
+  if (original[key] < compare[key]) {
     return -1;
-  } if (a[key] > b[key]) {
+  } if (original[key] > compare[key]) {
     return 1;
   }
   return 0;
@@ -20,26 +20,9 @@ function sortFunction(a, b, key) {
 // Randomizer works: 5:10 PM
 function randomize(max) {
   const num = Math.floor(Math.random() * Math.floor(max));
-  console.log(num);
+  // console.log(num);
   return num;
 }
-
-function createCountries() {
-  // somehow create the overall countries array if not able to access directly
-  /* it should pass through from the server as json, parse in the fromserver => fromserver.json() step, 
-  and be available in the final chained step with no real handling as long as 
-  it's being res.json'd correctly from the server */
-}
-
-/*
-function processThis(array){
-  // things
-}
-
-fetch()
-.then(dataFromFetch => dataFromFetch.json())
-.then(json => processThis(json)) 
-*/
 
 document.body.addEventListener('submit', async (e) => {
   e.preventDefault(); // this stops whatever the browser wanted to do itself.
@@ -54,10 +37,26 @@ document.body.addEventListener('submit', async (e) => {
     .then((fromServer) => fromServer.json())
     .then((fromServer) => {
       // You're going to do your lab work in here. Replace this comment.
-      // Array name IS fromServer
-      // console.log(countries); // This line may be obsolete
-      console.log('fromServer', fromServer);
-      // console.log(fromServer);
+      if (document.querySelector('.flex-inner')) {
+        document.querySelector('.flex-inner').remove();
+      }
+      const newArr = range(10);
+      const countryList = newArr.map(() => {
+        const num = randomize(244);
+        return fromServer[num];
+      });
+
+      const reversal = countryList.sort((a, b) => sortByKey(b, a, 'name'));
+      const list = document.createElement('ul');
+      list.className = 'flex-inner';
+      $('form').prepend(list);
+
+      reversal.forEach((element, i) => {
+        const li = document.createElement('li');
+        $(list).append(`<input type="checkbox" value=${element.code} id=${element.code} />`);
+        $(list).append(`<label for=${element.code}>${element.name}</label>`);
+        $(list).append(li);
+      });
     })
-    .catch((err) => console.log(err));
+  // .catch((err) => console.log(err));
 });
