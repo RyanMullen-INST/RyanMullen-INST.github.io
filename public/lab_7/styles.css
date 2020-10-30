@@ -1,6 +1,6 @@
 /*CSS*/
 body {
-  background: #eee;
+  background: #4d4d4d;
 }
 
 .wrapper {
@@ -23,6 +23,7 @@ body {
   margin-bottom: 5px;
   padding: 4px 8px;
   border-radius: 4px;
+  font-family: "Press Start 2P", cursive;
 }
 
 .flex-outer li,
@@ -46,11 +47,12 @@ body {
 }
 
 .flex-outer button {
-  background-color: darkolivegreen;
+  background-color: #0066cc;
   color: white;
   padding: 6px 12px;
   border: none;
   text-transform: uppercase;
+  font-family: "Press Start 2P", print;
   letter-spacing: 1.2px;
   border-radius: 3px;
   display: block;
@@ -84,7 +86,7 @@ h1 {
   margin: 20px 50px;
   padding: 0 20px;
   min-height: 75px;
-  background-color: darkolivegreen;
+  background-color: #0066cc;
   color: white;
   display: flex;
   
