@@ -1,24 +1,27 @@
 function convertRestaurantsToCategories(restaurantList) {
   // process your restaurants here!
-  // REDUCER GOES HERE
-  
-  const DataShape = restaurantList.reduce((collection, item, i) => {
-    const findCat = collection.find((findItem) => findItem.label === item.category);
-    if (!findCat) {
-      collection.push({
-        label: item.category,
-        y: 1
-      });
-    } else {
-      findCat.y += 1;
+  const arr1 = [];
+  const obj = {};
+  for (let i = 0; i < restaurantList.length; i += 1) {
+    arr1.push(restaurantList[i].category);
+  }
+  for (let i = 0; i < arr1.length; i += 1) {
+    if (!obj[arr1[i]]) {
+      obj[arr1[i]] = 0;
     }
-    return collection;
-  }, []);
-}
+    obj[arr1[i]] += 1;
+  }
+  const list = Object.keys(obj).map((category) => ({
+    y: obj[category],
+    label: category
+  }));
 
+  return list;
+}
+  
 function makeYourOptionsObject(datapointsFromRestaurantsList) {
   // set your chart configuration here!
-  CanvasJS.addColorSet('customColorSet1', ['#3693E3', '#1CDBE8', '#0E44E6', '#089FD1']);
+  CanvasJS.addColorSet('customColorSet1', ['#3693E3', '#1CDBE8', '#0E44E6', '#3001FF']);
   return {
     animationEnabled: true,
     colorSet: 'customColorSet1',
@@ -72,11 +75,9 @@ function runThisWithResultsFromServer(jsonFromServer) {
   console.log('jsonFromServer', jsonFromServer);
   sessionStorage.setItem('restaurantList', JSON.stringify(jsonFromServer));
   // don't mess with this, we need it to provide unit testing support ^^^^^
-
   // Process your restaurants list
   // Make a configuration object for your chart
   // Instantiate your chart
-  // READ DOCUMENTATION
   const reorganizedData = convertRestaurantsToCategories(jsonFromServer);
   const options = makeYourOptionsObject(reorganizedData);
   const chart = new CanvasJS.Chart('chartContainer', options);
