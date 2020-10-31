@@ -33,7 +33,6 @@ async function loadData() {
   const newDataShape = randomRestaurantsArray.reduce((collection, item, i) => {
     // for each item, check if we have a category for that item already
     const findCat = collection.find((findItem) => findItem.label === item.category);
-    
     if (!findCat) {
       collection.push({
         label: item.category,
